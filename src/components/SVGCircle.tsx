@@ -16,8 +16,8 @@ const SVGCircle: React.FC<props> = (props: props) => {
     }
     
     function describeArc(x: any, y: any, radius: any, startAngle: any, endAngle: any) {
-        let start = polarToCartesian(x, y, radius, endAngle | 0);
-        let end = polarToCartesian(x, y, radius, startAngle | 0);
+        let start = polarToCartesian(x, y, radius, endAngle);
+        let end = polarToCartesian(x, y, radius, startAngle);
     
         let largeArcFlag = endAngle - startAngle <= 180 ? '0' : '1';
 

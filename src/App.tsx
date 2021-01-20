@@ -5,7 +5,7 @@ import './App.css'
 const App: React.FC = () => {
     return (
         <>
-            <Countdown finalDate="03 26 2021, 12:00 am" dateFormat="MM DD YYYY, h:mm a" />
+            <Countdown finalDate="2021-03-26T12:00:00" />
         </>
     );
 }
